@@ -1,0 +1,161 @@
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+background: #D8F3DC;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form input[type="text"], .form input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px ;
+  }
+  
+  .post {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h1 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .post p {
+    margin-bottom: 10px;
+  }
+  
+  .post button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .post .Edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .post .Delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .post button:hover {
+    opacity: 0.8;
+  }
+
+  .Delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .Delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Optional: hide the edit form by default */
+  .post form {
+    display: none;
+  }
+  
+  .post:hover form {
+    display: block;
+  }
+
+  .No-items {
+ color : black ;
+ font-size: 25px ;
+ margin-top: 7%;
+ font-family: Arial, Helvetica, sans-serif ;
+ font-weight: bolder ;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .posts {
+      grid-template-columns: 1fr;
+    }
+     
+    .post{
+      text-align: center ;
+    }
+
+    .post input {
+      margin-top: 15px ;
+    }
+  }
