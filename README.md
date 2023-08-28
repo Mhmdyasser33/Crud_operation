@@ -42,3 +42,16 @@ src/
 - api.js: Simulates API calls for fetching, creating, updating, and deleting items.
 - items.js: Contains an array of sample items.
 - App.js: The main component that holds the application's layout and handles state.
+
+ # Technologies Used
+ - React: A JavaScript library for building user interfaces.
+ - Axios: A promise-based HTTP client for making API requests
+
+# ontributing
+Contributions to this project are welcome. Feel free to open issues or pull requests if you find any improvements or fixes to be made.
+
+# License
+This project is licensed under the MIT License.
+
+
+
