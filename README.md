@@ -7,7 +7,7 @@ This repository contains a simple implementation of CRUD (Create, Read, Update, 
 1. **Clone** this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/your-username/react-crud-demo.git
+   git clone https://github.com/Mhmdyasser33/Crud_operation
     ```
 # Navigate to the project directory:
    ``` bash
